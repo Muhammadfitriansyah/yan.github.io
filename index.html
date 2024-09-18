@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2309106078_MuhammadFitriansyah</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                background-color: #f7fafc;
+                padding: 40px;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background-color: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                padding: 30px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .left-section {
+                width: 45%;
+            }
+
+            .right-section {
+                width: 50%;
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+                font-weight: bold;
+                color: #2d3748;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #4a5568;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: #718096;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+
+            .button {
+                background-color: #f97316;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-block;
+                margin-top: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid #e2e8f0;
+            }
+
+            th,
+            td {
+                padding: 12px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f7fafc;
+                font-weight: bold;
+            }
+
+            .total-row {
+                background-color: #edf2f7;
+                font-weight: bold;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .right {
+                text-align: right;
+            }
+
+            .checkbox-label {
+                margin-right: 20px;
+            }
+
+            ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            .input-field {
+                padding: 6px;
+                border: 1px solid #cbd5e0;
+                border-radius: 4px;
+                width: 60px;
+                text-align: center;
+            }
+
+            .product-image {
+                width: 80px;
+                height: 60px;
+                border-radius: 8px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+
+            .product-info {
+                display: flex;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Left Section -->
+            <div class="left-section">
+                <h1>Thank you for your purchase!</h1>
+                <p>
+                    Your order will be processed within 24 hours during working
+                    days. We will notify you by email once your order has been
+                    shipped.
+                </p>
+
+                <h2>Billing Address</h2>
+                <p><strong>Name:</strong> Muhammad Fitriansyah</p>
+                <p>
+                    <strong>Address:</strong> JL Setia Budi No. 77, Konoha,
+                    Indonesia
+                </p>
+                <p><strong>Phone:</strong> +62 813-1234-5678</p>
+                <p><strong>Email:</strong> fitriansyah.muhammad@example.com</p>
+
+                <a href="#" class="button">Track Your Order</a>
+            </div>
+
+            <!-- Right Section (Order Summary with Logo and Combobox for Payment Method) -->
+            <div
+                class="right-section"
+                style="
+                    border: 1px solid #e2e8f0;
+                    padding: 20px;
+                    border-radius: 8px;
+                    background-color: #f5f5f5;
+                "
+            >
+                <!-- Logo at the top -->
+                <div style="text-align: center; margin-bottom: 20px">
+                    <img
+                        src="logo-resto.jpeg"
+                        alt="Company Logo"
+                        style="width: 150px; height: auto"
+                    />
+                </div>
+
+                <h2
+                    style="
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        color: #2d3748;
+                    "
+                >
+                    Order Summary
+                </h2>
+
+                <!-- Date, Order Number, Payment Method (with Combobox) -->
+                <div
+                    style="
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                    "
+                >
+                    <div>
+                        <p style="font-weight: bold; color: #c8cfd5">Date</p>
+                        <p style="font-weight: bold; color: black">
+                            18 September 2024
+                        </p>
+                    </div>
+                    <div>
+                        <p style="font-weight: bold; color: #c8cfd5">
+                            Order Number
+                        </p>
+                        <p style="font-weight: bold; color: black">
+                            2309106078
+                        </p>
+                    </div>
+                    <div>
+                        <p style="font-weight: bold; color: #c8cfd5">
+                            Payment Method
+                        </p>
+                        <!-- Styled Combobox -->
+                        <select
+                            style="
+                                font-weight: bold;
+                                color: black;
+                                background-color: #f5f5f5;
+                                border: 1px solid #e2e8f0;
+                                padding: 5px;
+                                border-radius: 4px;
+                            "
+                        >
+                            <option value="bca">Bank BCA</option>
+                            <option value="qris">QRIS</option>
+                            <option value="dana">DANA</option>
+                            <option value="ovo">OVO</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr style="border: 1px dotted #e2e8f0; margin-bottom: 20px" />
+
+                <!-- Order Items -->
+                <div style="margin-bottom: 20px">
+                    <div
+                        style="
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                        "
+                    >
+                        <div style="display: flex">
+                            <img
+                                src="nasi-goreng.jpeg"
+                                alt="Nasi Goreng"
+                                style="
+                                    width: 60px;
+                                    height: 60px;
+                                    border-radius: 8px;
+                                    margin-right: 10px;
+                                "
+                            />
+                            <div>
+                                <p
+                                    style="
+                                        font-weight: bold;
+                                        font-family: 'Arial', sans-serif;
+                                        color: #2d3748;
+                                    "
+                                >
+                                    Nasi Goreng
+                                </p>
+                                <p style="font-size: 12px; color: #718096">
+                                    Pack: 2 portions
+                                </p>
+                            </div>
+                        </div>
+                        <p style="font-weight: bold; color: #2d3748">
+                            Rp 40.000
+                        </p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                        <div style="display: flex">
+                            <img
+                                src="es-teh-manis.jpeg"
+                                alt="Es Teh Manis"
+                                style="
+                                    width: 60px;
+                                    height: 60px;
+                                    border-radius: 8px;
+                                    margin-right: 10px;
+                                "
+                            />
+                            <div>
+                                <p
+                                    style="
+                                        font-weight: bold;
+                                        font-family: 'Arial', sans-serif;
+                                        color: #2d3748;
+                                    "
+                                >
+                                    Es Teh Manis
+                                </p>
+                                <p style="font-size: 12px; color: #718096">
+                                    Pack: 2 glasses
+                                </p>
+                            </div>
+                        </div>
+                        <p style="font-weight: bold; color: #2d3748">
+                            Rp 10.000
+                        </p>
+                    </div>
+                </div>
+
+                <hr style="border: 1px dotted #e2e8f0; margin-bottom: 20px" />
+
+                <!-- Summary -->
+                <div
+                    style="font-size: 14px; color: #2d3748; margin-bottom: 10px"
+                >
+                    <div style="display: flex; justify-content: space-between">
+                        <p>Sub Total</p>
+                        <p style="font-weight: bold">Rp 50.000</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                        <p>Shipping</p>
+                        <p style="font-weight: bold">Rp 5.000</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                        <p>Tax</p>
+                        <p style="font-weight: bold">Rp 5.000</p>
+                    </div>
+                </div>
+
+                <hr style="border: 1px dotted #e2e8f0; margin-bottom: 20px" />
+
+                <!-- Order Total -->
+                <div
+                    style="
+                        display: flex;
+                        justify-content: space-between;
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: #2d3748;
+                    "
+                >
+                    <p>Order Total</p>
+                    <p>Rp 55.000</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
